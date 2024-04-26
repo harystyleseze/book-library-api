@@ -1,0 +1,68 @@
+{
+  "users": [
+    {
+      "name": "Philips Okeke",
+      "department": "Mechanical Engineering",
+      "id": 1
+    },
+    {
+      "name": "Harrison Okeke",
+      "department": "Materials Engineering",
+      "Faculty": "Engineering",
+      "id": 2
+    },
+    {
+      "name": "Obi Ben",
+      "password": 1234,
+      "department": "Materials Engineering",
+      "Faculty": "Engineering",
+      "id": 3
+    },
+    {
+      "name": "Obiora Benjamin",
+      "username": "obiben",
+      "password": 1234,
+      "department": "Materials Engineering",
+      "Faculty": "Engineering",
+      "id": 4
+    }
+  ],
+  "books": [
+    {
+      "title": "Guliver's travel",
+      "author": "Will Smith",
+      "edition": "2nd",
+      "yearOfPublication": 2002,
+      "isLoanedOut": "true",
+      "id": 2,
+      "status": "available"
+    },
+    {
+      "title": "Guliver's travel 1",
+      "author": "Will Smith",
+      "edition": "3rd",
+      "yearOfPublication": 2002,
+      "isLoanedOut": "true",
+      "id": 3,
+      "status": "available"
+    },
+    {
+      "title": "Guliver's travel",
+      "author": "Will Smith",
+      "edition": "2nd",
+      "yearOfPublication": 2002,
+      "isLoanedOut": "true",
+      "id": 4,
+      "status": "available"
+    },
+    {
+      "title": "Eze goes to school",
+      "author": "Cypril Ekwensi",
+      "edition": "1nd",
+      "yearOfPublication": 1997,
+      "isLoanedOut": "true",
+      "id": 4,
+      "status": "available"
+    }
+  ]
+}
