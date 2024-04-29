@@ -54,6 +54,34 @@ function handleUserRoutes(req, res, parsedUrl, path) {
         });
       });
     });
+  } else if (path === "/authenticate" && req.method === "POST") {
+    // Authenticate a user
+    let body = "";
+    req.on("data", (chunk) => {
+      body += chunk.toString();
+    });
+    req.on("end", () => {
+      readData((data) => {
+        const credentials = JSON.parse(body);
+        const user = data.users.find(
+          (u) =>
+            u.username === credentials.username &&
+            u.password === credentials.password
+        );
+        if (user) {
+          res.writeHead(200, { "Content-Type": "application/json" });
+          res.end(
+            JSON.stringify({
+              message: "Authentication successful",
+              user: user,
+            })
+          );
+        } else {
+          res.writeHead(401, { "Content-Type": "application/json" });
+          res.end(JSON.stringify({ message: "Authentication failed" }));
+        }
+      });
+    });
   }
 }
 

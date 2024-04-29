@@ -25,6 +25,14 @@
       "department": "Materials Engineering",
       "Faculty": "Engineering",
       "id": 4
+    },
+    {
+      "name": "Opara Emmanuel",
+      "username": "oemma",
+      "password": 1234,
+      "department": "Materials Engineering",
+      "Faculty": "Engineering",
+      "id": 5
     }
   ],
   "books": [
